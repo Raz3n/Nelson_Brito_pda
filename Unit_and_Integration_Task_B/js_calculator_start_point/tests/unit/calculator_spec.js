@@ -12,23 +12,32 @@ describe('calculator', function () {
   })
 
   it('it should add numbers', function(){
-    assert.strictEqual(5, 4 + 1);
-  })
+    calculator.previousTotal = 4;
+        calculator.add(1);
+        assert.deepStrictEqual(5, calculator.runningTotal);  })
 
   it('it should subtract numbers', function() {
-    assert.strictEqual(3, 7-4);
-  })
+    calculator.previousTotal = 7;
+        calculator.subtract(4);
+        assert.deepStrictEqual(3, calculator.runningTotal);  })
 
   it('it should multiply numbers', function() {
-    assert.strictEqual(15, 3 * 5);
+    calculator.previousTotal = 3;
+    calculator.multiply(5);
+    assert.deepStrictEqual(15, calculator.runningTotal);
   })
 
   it('it should divide numbers', function() {
-    assert.strictEqual(3, 21 / 7);
+    calculator.previousTotal = 21;
+    calculator.divide(7);
+    assert.deepStrictEqual(3, calculator.runningTotal);
   })
 
   it('it should concatenate multiple number button clicks', function() {
-    assert.
+    calculator.numberClick(4);
+    calculator.numberClick(5);
+    calculator.numberClick(4);
+    assert.deepStrictEqual(454, calculator.runningTotal);
   })
 
 });
