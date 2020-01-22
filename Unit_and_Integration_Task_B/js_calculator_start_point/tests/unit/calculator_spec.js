@@ -40,4 +40,14 @@ describe('calculator', function () {
     assert.deepStrictEqual(454, calculator.runningTotal);
   })
 
+  it('it should chain multiple operations together', function() {
+    calculator.numberClick(1);
+    calculator.operatorClick('+');
+    calculator.numberClick(5);
+    calculator.operatorClick('+');
+    calculator.numberClick(6);
+    calculator.operatorClick('=');
+    assert.deepStrictEqual(12, calculator.runningTotal);
+  })
+
 });
