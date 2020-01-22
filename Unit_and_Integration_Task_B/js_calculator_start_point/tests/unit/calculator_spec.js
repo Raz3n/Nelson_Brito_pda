@@ -50,4 +50,16 @@ describe('calculator', function () {
     assert.deepStrictEqual(12, calculator.runningTotal);
   })
 
+  it('it should clear the running total without affecting the calculation', function() {
+    calculator.numberClick(5);
+    calculator.operatorClick('+');
+    calculator.numberClick(5);
+    calculator.operatorClick('+');
+    calculator.numberClick(5);
+    calculator.clearClick();
+    calculator.numberClick(2);
+    calculator.operatorClick('=');
+    assert.deepStrictEqual(12, calculator.runningTotal);
+  })
+
 });
