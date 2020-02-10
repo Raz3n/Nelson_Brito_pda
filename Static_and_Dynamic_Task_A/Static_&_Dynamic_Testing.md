@@ -16,7 +16,7 @@
 
   Carry out dynamic testing on card_game.rb.
 
-  Read through the code. Create a spec file and write a test for each function. Screenshot the test code and the tests failing Correct the errors you spotted in task A and screenshot the tests passing. Save screenshots in the same folder as the code.
+  Read through the code. Create a spec file and write a test for each function. Screenshot the test code and the tests failing. Correct the errors you spotted in task A and screenshot the tests passing. Save screenshots in the same folder as the code.
 
 ### Submitting
 

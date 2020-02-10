@@ -1,4 +1,4 @@
-### Testing task 2 code:
+## Testing task 2 code:
 
 # Carry out dynamic testing on the code below.
 # Correct the errors below that you spotted in task 1.
@@ -37,3 +37,4 @@ class CardGame
   end
 
 end
+
